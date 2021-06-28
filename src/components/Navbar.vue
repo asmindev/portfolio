@@ -33,21 +33,21 @@
   </nav>
 </template>
 <script>
-import Toggle from './DarkModeToggle.vue';
+import Toggle from './DarkModeToggle.vue'
 
 export default {
   components: {
     Toggle,
   },
   data() {
-    return { isOpen: false };
+    return { isOpen: false }
   },
   methods: {
     toggle() {
-      this.isOpen = !this.isOpen;
+      this.isOpen = !this.isOpen
     },
   },
-};
+}
 </script>
 <style scoped>
 .btn {

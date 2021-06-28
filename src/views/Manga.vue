@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white">
+  <div class="text-gray-100">
     <div
       v-for="manga in listAnime.anime"
       v-bind:key="manga.chapter"
@@ -34,8 +34,8 @@
   </div>
 </template>
 <script>
-const axios = require('axios');
-const { reactive } = require('vue');
+const axios = require('axios')
+const { reactive } = require('vue')
 
 export default {
   props: {
@@ -47,15 +47,15 @@ export default {
   setup(props) {
     const listAnime = reactive({
       anime: [],
-    });
+    })
     axios
       .get(`https://mangamint.kaedenoki.net/api/manga/page/${props.page}`)
       .then((s) => {
-        const data = s.data.manga_list;
-        listAnime.anime = data;
+        const data = s.data.manga_list
+        listAnime.anime = data
       })
-      .catch((err) => console.log(err.message));
-    return { listAnime };
+      .catch((err) => console.log(err.message))
+    return { listAnime }
   },
-};
+}
 </script>
