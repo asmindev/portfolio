@@ -1,7 +1,5 @@
 <template>
-  <main
-    class="font-mono text-gray-800 bg-gray-100 dark:bg-gray-800 dark:text-gray-800"
-  >
+  <main class="theme smooth font-mono">
     <Navbar />
     <div class="container mx-auto md:p-8">
       <router-view />
@@ -11,13 +9,21 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue'
+import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   components: {
     Navbar,
     Footer,
   },
-}
+};
 </script>
+<style>
+.theme {
+  @apply text-gray-800 bg-white dark:bg-gray-800 dark:text-gray-100;
+}
+.smooth {
+  @apply transition-colors duration-500;
+}
+</style>

@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import PageNotFound from '../views/404.vue'
 import Skills from '../views/Skills.vue'
-import Projects from '../views/Projects.vue'
+import Tools from '../views/Tools.vue'
+import Test from '../views/Test.vue'
 
 const routes = [
   {
@@ -11,9 +12,14 @@ const routes = [
     component: Home,
   },
   {
-    path: '/projects',
-    name: 'Projects',
-    component: Projects,
+    path: '/tools',
+    name: 'Tools',
+    component: Tools,
+  },
+  {
+    path: '/test',
+    name: 'Test',
+    component: Test,
   },
   {
     path: '/skills',

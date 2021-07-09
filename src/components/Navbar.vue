@@ -17,7 +17,7 @@
       </div>
       <div
         :class="isOpen ? 'block' : 'hidden'"
-        class="z-10 w-full h-screen bg-gray-100 text-gray-800 flex flex-col items-center justify-center md:pr-12 md:block md:h-auto md:text-right dark:bg-gray-800 dark:text-gray-100"
+        class="z-10 w-full h-screen bg-white text-gray-800 flex flex-col items-center justify-center md:pr-12 md:block md:h-auto md:text-right dark:bg-gray-800 dark:text-gray-100"
       >
         <router-link @click="isOpen = false" to="/" class="px-2"
           >Home</router-link
@@ -28,26 +28,29 @@
         <router-link @click="isOpen = false" to="/skills" class="px-2"
           >Skills</router-link
         >
+        <router-link @click="isOpen = false" to="/tools" class="px-2">
+          Tools
+        </router-link>
       </div>
     </div>
   </nav>
 </template>
 <script>
-import Toggle from './DarkModeToggle.vue'
+import Toggle from './DarkModeToggle.vue';
 
 export default {
   components: {
     Toggle,
   },
   data() {
-    return { isOpen: false }
+    return { isOpen: false };
   },
   methods: {
     toggle() {
-      this.isOpen = !this.isOpen
+      this.isOpen = !this.isOpen;
     },
   },
-}
+};
 </script>
 <style scoped>
 .btn {

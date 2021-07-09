@@ -1,5 +1,8 @@
 module.exports = {
   transpileDependencies: [
-    'vuetify'
-  ]
+    'vuetify',
+  ],
+  devServer: {
+    proxy: 'https://instagram.com',
+  },
 }
