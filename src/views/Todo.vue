@@ -5,6 +5,9 @@
         <div class="brdr bg-gray-700 text-white text-center">
           Border
         </div>
+        <div class="bg-red-500"></div>
+        <div id="vim"></div>
+        <div
       </div>
     </div>
   </div>

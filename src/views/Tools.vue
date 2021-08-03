@@ -1,12 +1,14 @@
 <template>
-  <div class="w-full mb-12">
+  <div class="w-full mb-12 text-center">
     <h1
-      class="mt-12 text-2xl font-semibold uppercase text-center dark:text-gray-100 transition-colors duration-500"
+      class="mt-12 text-2xl inline-block border-b-2 border-indigo-500 font-semibold uppercase text-center dark:text-gray-100 transition-colors duration-500"
     >
       Tools
     </h1>
-    <div class="w-11/12 mx-auto md:flex">
-      <Reel @result="resp" />
+    <div class="w-full mt-8">
+      <div class="w-11/12 mx-auto md:flex">
+        <Reel @result="resp" />
+      </div>
     </div>
 
     <div>
@@ -18,7 +20,7 @@
           :src="'data:video/mp4;base64,' + video"
           type="video/mp4"
         />
-        <div class="w-full my-6 flex justify-center">
+        <div class="w-full my-6 flex justify-center bg">
           <a
             class="bg-indigo-500 rounded flex items-center gap-2 px-4 py-3 text-gray-100"
             :download="

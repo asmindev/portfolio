@@ -1,5 +1,5 @@
 <template>
-  <div class="font-mono pr-2 flex justify-end">
-    <p class="mt-12 mb-2 text-xs">Buildwith Vue.js and taildwindCSS</p>
+  <div class="flex justify-end -mt-4 pr-2">
+    <p class="text-xs">Buildwith Vue.js and taildwindCSS</p>
   </div>
 </template>

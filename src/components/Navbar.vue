@@ -31,6 +31,9 @@
         <router-link @click="isOpen = false" to="/tools" class="px-2">
           Tools
         </router-link>
+        <router-link @click="isOpen = false" to="/api" class="px-2">
+          Api
+        </router-link>
       </div>
     </div>
   </nav>

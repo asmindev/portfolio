@@ -1,17 +1,16 @@
 <template>
   <main
-    class="w-full bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+    class="w-full pt-12"
   >
-    <div>&nbsp;</div>
-    <div class="h-full mt-12">
+    <div class="h-full">
       <div class="w-full text-center mx-auto">
-        <h1 class="font-semibold text-2xl my-4">Skills</h1>
+        <h1 class="px-2 inline-block font-semibold text-2xl my-4 border-b-2 border-indigo-500">Skills</h1>
         <p class="my-8">I have experience but i'm not expert</p>
         <div class="w-11/12 flex flex-wrap mx-auto justify-center">
           <div class="w-1/2 px-4 py-2">
             <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700 transform hover:scale-110 transition-all duration-300">
               <svg
-                class="w-24 h-24 mx-auto"
+              class="w-24 h-24 mx-auto"
                 viewBox="0 0 256 255"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMinYMin meet"

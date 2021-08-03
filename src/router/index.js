@@ -4,6 +4,7 @@ import PageNotFound from '../views/404.vue'
 import Skills from '../views/Skills.vue'
 import Tools from '../views/Tools.vue'
 import Test from '../views/Test.vue'
+import Api from '../views/Api.vue'
 
 const routes = [
   {
@@ -22,9 +23,14 @@ const routes = [
     component: Test,
   },
   {
-    path: '/skills',
+    path: '/skill',
     name: 'Skills',
     component: Skills,
+  },
+  {
+    path: '/api',
+    name: 'Api',
+    component: Api,
   },
   {
     path: '/about',

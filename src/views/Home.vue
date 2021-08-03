@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import anime from 'animejs';
+import anime from 'animejs'
 // @ is an alias to /src
 export default {
   name: 'Home',
@@ -39,7 +39,7 @@ export default {
   },
   mounted() {
     setInterval(() => {
-      const writer = 'Hi i am Asmin, Live in Watabea. Focused on building beautiful and awesome websites. ';
+      const writer = 'Hi i am Asmin, Live in Watabea. Focused on building beautiful and awesome websites';
       if (this.counter !== writer.length) {
         this.text += writer[this.counter];
         this.counter += 1;
