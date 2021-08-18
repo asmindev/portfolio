@@ -51,7 +51,7 @@
                       "
                     >
                       <p class="p-2 bg-indigo-500 text-white rounded-l">POST</p>
-                      <p class="block w-full p-2 text-sm overflow-auto">
+                      <p class="block w-full p-2 text-sm overflow-hidden">
                         https://asmin.pythonanywhere.com/api/instagram/followers
                       </p>
                     </div>

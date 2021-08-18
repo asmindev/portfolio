@@ -1,16 +1,42 @@
 <template>
-  <main
-    class="w-full pt-12"
-  >
+  <main class="w-full pt-12">
     <div class="h-full">
       <div class="w-full text-center mx-auto">
-        <h1 class="px-2 inline-block font-semibold text-2xl my-4 border-b-2 border-indigo-500">Skills</h1>
+        <h1
+          class="
+            px-2
+            inline-block
+            font-semibold
+            text-2xl
+            my-4
+            border-b-2 border-indigo-500
+          "
+        >
+          Skills
+        </h1>
         <p class="my-8">I have experience but i'm not expert</p>
-        <div class="w-11/12 flex flex-wrap mx-auto justify-center">
+        <div class="w-11/12 mx-auto flex flex-wrap justify-center">
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700 transform hover:scale-110 transition-all duration-300">
+            <div
+              class="
+                px-4
+                pt-8
+                shadow-md
+                bg-gray-50
+                rounded
+                border border-indigo-500
+                dark:bg-gray-700
+                transform
+                hover:scale-110
+                transition-all
+                duration-300
+                flex flex-col
+                justify-center
+                items-strecth
+              "
+            >
               <svg
-              class="w-24 h-24 mx-auto"
+                class="w-11/12 mx-auto"
                 viewBox="0 0 256 255"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMinYMin meet"
@@ -50,9 +76,23 @@
             </div>
           </div>
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700 transform hover:scale-110 transition-all duration-300">
+            <div
+              class="
+                px-4
+                pt-8
+                shadow-md
+                bg-gray-50
+                rounded
+                border border-indigo-500
+                dark:bg-gray-700
+                transform
+                hover:scale-110
+                transition-all
+                duration-300
+              "
+            >
               <svg
-                class="w-24 h-24 mx-auto"
+                class="w-11/12 mx-auto"
                 viewBox="0 0 256 256"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMinYMin meet"
@@ -66,15 +106,47 @@
             </div>
           </div>
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700 transform hover:scale-110 transition-all duration-300">
-              <img class="w-24 h-24 mx-auto" src="../assets/nodejs.svg" alt="nodejs logo" />
+            <div
+              class="
+                px-4
+                pt-8
+                shadow-md
+                bg-gray-50
+                rounded
+                border border-indigo-500
+                dark:bg-gray-700
+                transform
+                hover:scale-110
+                transition-all
+                duration-300
+              "
+            >
+              <img
+                class="w-11/12 mx-auto h-28"
+                :src="nodejs"
+                alt="nodejs logo"
+              />
               <h3 class="font-semibold text-lg my-4">NodeJS</h3>
             </div>
           </div>
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700 transform hover:scale-110 transition-all duration-300">
+            <div
+              class="
+                px-4
+                pt-8
+                shadow-md
+                bg-gray-50
+                rounded
+                border border-indigo-500
+                dark:bg-gray-700
+                transform
+                hover:scale-110
+                transition-all
+                duration-300
+              "
+            >
               <svg
-                class="w-24 h-24 mx-auto"
+                class="w-11/12 mx-auto"
                 viewBox="0 -17.5 256 256"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMinYMin meet"
@@ -96,9 +168,23 @@
             </div>
           </div>
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700 transform hover:scale-110 transition-all duration-300">
+            <div
+              class="
+                px-4
+                pt-8
+                shadow-md
+                bg-gray-50
+                rounded
+                border border-indigo-500
+                dark:bg-gray-700
+                transform
+                hover:scale-110
+                transition-all
+                duration-300
+              "
+            >
               <svg
-                class="w-24 h-24 mx-auto"
+                class="w-11/12 h-28 mx-auto"
                 preserveAspectRatio="xMidYMid"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 256 153.6"
@@ -121,9 +207,16 @@
   </main>
 </template>
 <script>
+import nodejs from '../assets/nodejs.svg'
+
 export default {
+  data() {
+    return {
+      nodejs,
+    }
+  },
   mounted() {
-    document.querySelector('title').text = "Asmin's Skills"
+    document.querySelector('title').text = 'Portofolio | Skills'
   },
 }
 </script>

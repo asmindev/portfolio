@@ -1,5 +1,5 @@
 <template>
-  <main class="font-mono theme smooth">
+  <main class="font-mono">
     <div class="flex">
       <Sidebar :isOpen="isOpen" @change="onChange" />
       <div class="container mx-auto relative">
@@ -64,7 +64,7 @@ export default {
 </script>
 <style>
 .theme {
-  @apply text-gray-800 bg-white dark:bg-gray-800 dark:text-gray-100;
+  @apply text-gray-800 bg-gray-100 dark:bg-gray-800 dark:text-gray-100;
 }
 .smooth {
   @apply transition-colors duration-500;
