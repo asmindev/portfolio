@@ -35,7 +35,7 @@
                 <h1 class="text-xl uppercase flex items-center justify-between">
                   instagram <i class="md:hidden ri-arrow-right-s-line"></i>
                 </h1>
-                <div class="w-full mt-4">
+                <div class="w-full mt-4 overflow-hidden">
                   <div class="w-full">
                     <h1 class="border-b-2 border-indigo-500">Get followers</h1>
                     <div
@@ -51,7 +51,7 @@
                       "
                     >
                       <p class="p-2 bg-indigo-500 text-white rounded-l">POST</p>
-                      <p class="block w-full p-2 text-sm overflow-hidden">
+                      <p class="block w-full p-2 text-sm overflow-auto">
                         https://asmin.pythonanywhere.com/api/instagram/followers
                       </p>
                     </div>

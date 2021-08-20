@@ -1,5 +1,5 @@
 <template>
-  <main class="font-mono">
+  <main class="font-mono overflow-hidden">
     <div class="flex">
       <Sidebar :isOpen="isOpen" @change="onChange" />
       <div class="container mx-auto relative">
