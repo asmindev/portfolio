@@ -16,7 +16,7 @@
           <router-link to="/api" class="relative">
             <span class="p-3 block md:flex">
               <i class="text-2xl ri-code-s-slash-fill"></i>
-              <h1 class="hidden md:block mx-2">Tools</h1>
+              <h1 class="hidden md:block mx-2">API</h1>
             </span>
           </router-link>
           <router-link to="/tools" class="relative">
@@ -28,13 +28,13 @@
           <router-link to="/skill" class="relative">
             <span class="p-3 block md:flex">
               <i class="text-2xl ri-stack-line"></i>
-              <h1 class="hidden md:block mx-2">Tools</h1>
+              <h1 class="hidden md:block mx-2">Skill</h1>
             </span>
           </router-link>
           <router-link to="/about" class="relative">
             <span class="p-3 block md:flex">
               <i class="text-2xl ri-user-line"></i>
-              <h1 class="hidden md:block mx-2">Tools</h1>
+              <h1 class="hidden md:block mx-2">About</h1>
             </span>
           </router-link>
         </div>
