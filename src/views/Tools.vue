@@ -25,8 +25,8 @@
             class="bg-indigo-500 rounded flex items-center gap-2 px-4 py-3 text-gray-100"
             :download="
               response['owner'] +
-                response['caption'].slice(0, 15).replace(/ /g, '_') +
-                '.mp4'
+                response['caption']?.slice(0, 15).replace(/ /g, '_') ||
+              'reels' + '.mp4'
             "
             :href="'data:video/mp4;base64,' + video"
           >
@@ -38,8 +38,8 @@
   </div>
 </template>
 <script>
-import { reactive, toRefs } from 'vue';
-import Reel from '../components/InstagramReel.vue';
+import { reactive, toRefs } from 'vue'
+import Reel from '../components/InstagramReel.vue'
 
 export default {
   components: {
@@ -51,11 +51,11 @@ export default {
       img: String,
       video: String,
       response: {},
-    });
+    })
     const resp = (val) => {
-      Object.assign(data, val);
-    };
-    return { resp, ...toRefs(data) };
+      Object.assign(data, val)
+    }
+    return { resp, ...toRefs(data) }
   },
-};
+}
 </script>

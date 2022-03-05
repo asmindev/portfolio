@@ -9,31 +9,31 @@
         <div class="flex flex-col">
           <router-link to="/" class="relative">
             <span class="p-3 block md:flex">
-              <i class="text-2xl ri-home-2-line"></i>
+              <i class="text-indigo-300 text-2xl ri-home-2-line"></i>
               <h1 class="hidden md:block mx-2">Home</h1>
             </span>
           </router-link>
           <router-link to="/api" class="relative">
             <span class="p-3 block md:flex">
-              <i class="text-2xl ri-code-s-slash-fill"></i>
+              <i class="text-indigo-300 text-2xl ri-code-s-slash-fill"></i>
               <h1 class="hidden md:block mx-2">API</h1>
             </span>
           </router-link>
           <router-link to="/tools" class="relative">
             <span class="p-3 block md:flex">
-              <i class="text-2xl ri-tools-fill"></i>
+              <i class="text-indigo-300 text-2xl ri-tools-fill"></i>
               <h1 class="hidden md:block mx-2">Tools</h1>
             </span>
           </router-link>
           <router-link to="/skill" class="relative">
             <span class="p-3 block md:flex">
-              <i class="text-2xl ri-stack-line"></i>
+              <i class="text-indigo-300 text-2xl ri-stack-line"></i>
               <h1 class="hidden md:block mx-2">Skill</h1>
             </span>
           </router-link>
           <router-link to="/about" class="relative">
             <span class="p-3 block md:flex">
-              <i class="text-2xl ri-user-line"></i>
+              <i class="text-indigo-300 text-2xl ri-user-line"></i>
               <h1 class="hidden md:block mx-2">About</h1>
             </span>
           </router-link>
@@ -65,7 +65,11 @@ export default {
 }
 </script>
 <style scoped>
+.router-link-exact-active span i {
+  @apply text-white;
+}
 .router-link-exact-active::before {
+  background-color: #fff;
   content: '';
   position: absolute;
   left: -2px;

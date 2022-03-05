@@ -6,17 +6,11 @@
           I am
           <a
             href="https://instagram.com/iniasmin_"
-            class="
-              text-indigo-400
-              hover:text-indigo-300
-              focus:text-indigo-500
-              transition-all
-              duration-150
-            "
+            class="text-indigo-400 hover:text-indigo-300 focus:text-indigo-500 transition-all duration-150"
             >asmin</a
           >, 19 years old. Student at Halu Oleo university, majoring in
           informatics engineering. Currently learning Python, JavaScript, VueJS,
-          NodeJS and TailwindCSS
+          NodeJS, VueJS, ReactJS and TailwindCSS
         </p>
       </div>
     </div>
